@@ -1,0 +1,24 @@
+<header class="page-header">
+    <a class="link header__link has-helper" href="/">
+        <span class="link-logo">Gentleman</span>
+        <i class="helper">Go to the homepage</i>
+    </a>
+    <div class="page-menu-item selected">
+        <span class="link-logo">Documentation</span>
+    </div>
+    <ul class="bare-list page-menu" data-component="menu">
+        {% for link in site.documentation %}
+            {% if link.name == page.id  %}
+                <li class="page-menu-item selected has-helper">
+                    <span class="page-menu-item__text">{{ link.title }}</span>
+                    <i class="helper">You are there 👇</i>
+                </li>
+            {% else %}
+                <li class="page-menu-item has-helper">
+                    <a class="page-menu-item__link" href="{{ link.url }}">{{ link.title }}</a>
+                    <i class="helper">{{ link.help }}</i>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</header>

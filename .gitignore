@@ -1,4 +1,13 @@
-_site/
-.sass-cache/
-.jekyll-cache/
+_site
+.sass-cache
+.jekyll-cache
 .jekyll-metadata
+vendor
+node_modules
+.internal
+.DS_STORE
+.vscode
+package.json
+package-lock.json
+_src
+config

@@ -1,0 +1,128 @@
+
+.doc-img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    height: 240px;
+}
+
+.docx-model {
+    display: flex;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+.docx-model-concept {
+    display: flex; flex-direction: column;
+    margin-right: 12px;
+    padding: 8px 12px 6px;
+    font-size: 1.4rem;
+    background-color: #f5f5f5;
+    border-radius: 2px;
+    box-shadow: 0 0 1px 1px #d5d5d5;
+}
+    .docx-model-concept--book {
+        max-width: 400px;
+    }
+
+    .docx-model-concept i {
+        font-style: normal;
+    }
+
+    .docx-model-concept u {
+        text-decoration: none;
+    }
+
+.docx-concept-name {
+    margin-top: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em; font-weight: 400;
+    color: #111;
+}
+
+.docx-concept-description {
+    font-size: 0.95em;
+    margin-bottom: 0;
+}
+
+.docx-concept-attributes {
+    display: flex; flex-direction: column;
+}
+
+.docx-concept-attribute {
+    font-size: 1em;
+}
+
+.attr-name {
+    font: bold 1em Consolas, 'Courier New', Courier, monospace;
+}
+    .attr-name:after {
+        content: ":";
+    }
+
+.attr-type {
+    color: blue;
+}
+
+.attr-type-accept:before {
+    content: "{";
+    font: bold 1em Consolas, 'Courier New', Courier, monospace;
+}
+
+.attr-type-accept:after {
+    content: "}";
+    font: bold 1em Consolas, 'Courier New', Courier, monospace;
+}
+
+.attr-type-target:before {
+    content: "->";
+    font: bold 1em Consolas, 'Courier New', Courier, monospace;
+}
+
+.attr-constraints {
+    display: inline-flex; align-items: center;
+    text-decoration: none;
+    color: crimson;
+}
+.attr-constraints:before {
+    content: "[";
+    font: bold 1em Consolas, 'Courier New', Courier, monospace;
+}
+.attr-constraints:after {
+    content: "]";
+    font: bold 1em Consolas, 'Courier New', Courier, monospace;
+}
+
+.attr-constraint {
+    font-family: Consolas, 'Courier New', Courier, monospace;
+}
+
+.attr-constraint:not(:first-child):before {
+    content: ", ";
+}
+
+.attr-constraint-op {
+    font-weight: bold;
+}
+
+.vlist {
+    display: flex; flex-direction: column;
+    margin-top: 4px;
+}
+
+.docx-model-app {
+    margin-top: 12px;
+    height: 480px;
+}
+
+.docx-model-editor {
+    background-color: #eee;
+    border-radius: 4px;
+    border: 1px solid #c0c0c0;
+}
+
+.page-footer {
+    display: flex;
+    align-items: flex-end;
+    min-width: 240px;
+}

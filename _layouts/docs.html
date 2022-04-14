@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gentleman | Documentation: {{page.title}}</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="description" content="{{ page.description }}">
+    <meta property="og:title" content="Gentleman website">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:url" content="https://gentlemancp.org/">
+    <meta property="og:site_name" content="Gentleman">
+    <!-- <meta property="og:image" content="https://serviceslafontant.ca/assets/images/logo.png"> -->
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <link rel="stylesheet" href="/assets/css/docs.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/geodes-sms/gentleman/dist/style.min.css?v=3">
+    {% if page.css %}
+        {% for stylesheet in page.css %}
+            <link rel="stylesheet" href="/assets/css/{{ stylesheet }}">
+        {% endfor %}
+    {% endif %}
+</head>
+<body class="site">
+    {%- include docs-header.html -%}
+
+    <main class="docs__main">
+        {{ content }}
+
+        <footer class="page-footer">
+            <div class="content-wrapper">
+                <!-- <ul> 
+                    <li class="page-menu-item has-helper">
+                        <a class="page-menu-item__link" href="https://github.com/geodes-sms/gentleman">Source code</a>
+                        <i class="helper">GitHub Repository</i>
+                    </li>
+                </ul> -->
+                <p>Gentleman</p>
+                <p class="footer-license">
+                    Copyright &copy; 2020 &ndash; 2022 <br> Louis-Edouard LAFONTANT
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/gh/geodes-sms/gentleman/dist/gentleman.core.js?v=3"></script>
+    {% if page.scripts %}
+        {% for file in page.scripts %}
+            <script src="/assets/js/{{ file }}"></script>
+        {% endfor %}
+    {% endif %}
+</body>
+</html>

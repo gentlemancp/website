@@ -1,0 +1,149 @@
+.background-section,
+.gentleman-section,
+.motivation-section {
+    max-width: 900px;
+}
+
+.motivation-section,
+.gentleman-section {
+    margin-top: 18px;
+}
+
+.team-section {
+    margin-top: 24px;
+}
+
+.background-section .section-paragraph,
+.motivation-section .section-paragraph,
+.gentleman-section p {
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+.page-body {
+    padding-bottom: 30px;
+}
+
+.page-body-content {
+    padding-top: 24px;
+}
+
+.section-title {
+    font-size: 2.6em;
+    margin-bottom: 6px;
+}
+
+.paragraph-title {
+    text-transform: uppercase;
+    font: 300 1.7em 'Segoe UI', 'Droid Sans', Ubuntu, 'Lucida Grande', Arial, sans-serif;
+    margin-top: 6px;
+}
+
+.ref {
+    position: relative;
+    display: inline-block;
+}
+
+.ref-icon {
+    color: royalblue; font-weight: 500;
+    font-style: normal;
+    padding-left: 2px; padding-right: 2px;
+    cursor: default;
+}
+    .ref-icon:before { color: royalblue; content: "["; }
+    .ref-icon:after { color: royalblue; content: "]"; }
+        .ref:hover .ref-icon,
+        .ref:focus .ref-icon {
+            background-color: royalblue;
+            color: #fff;
+        }
+
+.ref-previews {
+    position: absolute;
+    top: 100%; left: 0;
+    display: flex; flex-direction: column;
+    width: 300px;
+    color: #fefefe;
+    background-color: #333;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px rgba(155, 155, 155, 0.8);
+    opacity: 0;
+    transform: scale(0);
+    transition: .2s;
+    z-index: 2;
+}
+    .ref:hover .ref-previews,
+    .ref:focus .ref-previews {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+
+.ref-preview {
+    position: relative;
+    display: flex; flex-direction: column;
+    font-size: 1.3rem;
+    padding-bottom: 6px;    
+}
+
+.ref-type {
+    padding: 2px 6px;
+    color: #fff;
+    font-weight: bold;
+    border-bottom-left-radius: 2px;
+    font-family: Consolas, 'Courier New', Courier, monospace;
+    background-color: #111;
+}
+
+.ref-title {
+    display: block;
+    color: inherit;
+    padding-left: 6px; padding-right: 6px;
+}
+
+.ref-title {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.ref-authors {
+    display: flex; flex-wrap: wrap;
+    margin-top: 4px;
+    font-size: 1rem;
+    padding-left: 6px; padding-right: 6px;
+}
+
+.ref-author {
+    margin-right: 4px; margin-bottom: 4px;
+    padding: 2px 4px;
+    font-size: 1.3em;
+    border-radius: 1px;
+    background-color: #555;
+}
+
+.example {
+    display: inline-flex; align-items: center;
+    background-color: #f5f5f5;
+    background-color: #f5f5f5;
+    padding-right: 6px;
+    border-radius: 2px;
+}
+
+.example a {
+    color: #2D68C4;
+}
+.example a:hover {
+    text-decoration: underline;
+}
+
+.example-icon {
+    font-style: normal;
+    color: #555;
+    background-color: #d5d5d5;
+    font-weight: 500;
+    padding: 1px 3px;
+}
+
+.example-link {
+    margin-left: 3px;
+}

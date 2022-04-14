@@ -1,0 +1,14 @@
+.qa {
+    max-width: 900px;
+    margin-bottom: 24px;
+}
+
+.qa-title {
+    margin-bottom: 8px;
+    font-weight: 400;
+    color: #444;
+}
+
+.qa p, .qa li {
+    line-height: 1.5;
+}
