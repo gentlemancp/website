@@ -21,7 +21,7 @@ css: ["pages/about.css"]
         <h3 class="paragraph-title">Domain-specific modeling</h3>
         <div class="section-paragraph">
             Domain-specific modeling (DSM) makes software more accessible and inclusive by leveraging the expertise and knowledge of
-            domain experts from various backgrounds instead of relying solely on programmers and software engineers. 
+            domain experts from various backgrounds, such as insurance or healthcare, instead of relying solely on programmers and software engineers. 
             This modeling practice allows the solution to be specified directly using problem domain concepts.
             <div tabindex="0" class="ref">
                 <i class="ref-icon">Ref.</i> 
@@ -36,13 +36,25 @@ css: ["pages/about.css"]
                     </li>
                 </ul>
             </div>
-            In DSM, <em>models</em> are the primary artifact manipulated and produced using <a href="https://en.wikipedia.org/wiki/Domain-specific_language">domain-speciﬁc languages</a> (DSL) <span class="example">
+            In the activity of DSM, <em>models</em> are the primary artifact manipulated and produced using <a href="https://en.wikipedia.org/wiki/Domain-specific_language">domain-speciﬁc languages</a> (DSL) <span class="example">
                 <i class="example-icon">Info</i> 
-                <a class="bare-link example-link" href="https://opensource.com/article/20/2/domain-specific-languages">DSL overview</a>
+                <a class="bare-link example-link" target="_blank" href="https://opensource.com/article/20/2/domain-specific-languages">DSL overview</a>
             </span>.
-            Contrary to general-purpose programming languages (GPLs), such as <code>Python</code> or <code>Java</code>, 
-            DSLs are languages tailored to a specific application domain. They offer substantial gains in expressiveness
-            and ease of use compared with GPLs in their domain of application.
+            Contrary to general-purpose programming languages (GPLs)
+            <span class="example">
+                <i class="example-icon">E.g.</i> 
+                <span class="bare-link example-link">Java</span>, 
+                <span class="bare-link example-link">Python</span>
+            </span>, 
+            DSLs are languages tailored to a specific application domain. 
+            The domain may be restricted to a device (embedded system), a specific project
+            <span class="example">
+                <i class="example-icon">E.g.</i> 
+                <em>meeting scheduler application</em>
+            </span>
+             or it may be common to a larger group of experts and practitioners, 
+            such as the hardware description language VHDL or the web languages CSS and HTML.
+            They offer substantial gains in expressiveness and ease of use compared with GPLs in their domain of application.
             <div tabindex="0" class="ref">
                 <i class="ref-icon">Ref.</i> 
                 <ul class="bare-list ref-previews">
@@ -59,10 +71,10 @@ css: ["pages/about.css"]
             </div>
         </div>
 
-        <h3 class="paragraph-title">Language workbenches</h3>
+        <h3 class="paragraph-title">Language workbench</h3>
         <div class="section-paragraph">
-            <em>Language workbenches</em> were created to support these
-            modeling and language engineering activities 
+            Those modeling and language activities are supported by <em>language workbenches</em>.
+            They support the efficient definition, reuse, and composition of DSLs and their IDEs
             <div tabindex="0" class="ref">
                 <i class="ref-icon">Ref.</i> 
                 <ul class="bare-list ref-previews">
@@ -74,9 +86,9 @@ css: ["pages/about.css"]
                         </ul>
                     </li>
                 </ul>
-            </div>
-            They support the efficient definition, reuse, and composition of languages and their IDEs.  <br>
-            Most language workbenches use a <strong>parser-based approach</strong>, with a textual or graphical syntax
+            </div>.
+            One key aspect of their differences lies in their modeling editors, which can be classified as parser-based and projectional.<br>
+            Most language workbench editors use a <strong>parser-based approach</strong>, with a textual or graphical syntax
             <span class="example">
                 <i class="example-icon">E.g.</i> 
                 <a class="bare-link example-link" href="https://www.eclipse.org/Xtext/">Xtext</a>, 
@@ -86,7 +98,7 @@ css: ["pages/about.css"]
             A parser-based editing approach relies on a parser to continuously scan the input to build the an abstract syntax tree (AST),
             validated with a grammar. However, this approach limits the evolution of DSLs and is prone to syntactic errors. <br>
             
-            With a <strong>projectional editing approach</strong>,
+            With a <strong>projectional editing approach</strong>
             <span class="example">
                 <i class="example-icon">E.g.</i> 
                 <a class="bare-link example-link" href="https://www.jetbrains.com/mps/">Jetbrains MPS</a>, 
@@ -94,7 +106,7 @@ css: ["pages/about.css"]
                 <a class="bare-link example-link" href="https://scratch.mit.edu/">Scratch</a>
             </span>
             the AST is modified directly as the user edits a program, thus preventing syntactic errors.
-            The approach enables the support of notations that cannot be easily parsed, such as tables or mathematical formulas,
+            The approach enables the support of notations that cannot be easily parsed, such as tables, forms or diagrams,
             and the composition of any language without introducing syntactic ambiguities.
         </div>
     </section>
@@ -160,7 +172,7 @@ css: ["pages/about.css"]
             </div>.
         </div>
 
-        <h3 class="paragraph-title">UML and OOP limitation</h3>
+        <h3 class="paragraph-title">UML and OOP</h3>
         <div class="section-paragraph">
             The <a href="https://www.uml.org/">Unified Modeling Language</a> (UML) is currently the main modeling language used in the practice of MDE.
             However, as it is is rooted in object-oriented programming (OOP), <strong>UML hinders the modeling process
@@ -177,11 +189,11 @@ css: ["pages/about.css"]
                             </ul>
                         </li>
                     </ul>
-                </div> , who concluded from a survey that software developers either did not use
+                </div> who concluded from a survey that software developers either did not use
                     UML at all or used it only selectively and informally.
         </div>
 
-        <h3 class="paragraph-title">Web-based solution</h3>
+        <h3 class="paragraph-title">Web solution</h3>
         <div class="section-paragraph">
             A much-requested feature by practitioners, according to Agner and Lethbridge 
             <div tabindex="0" class="ref">
@@ -197,11 +209,10 @@ css: ["pages/about.css"]
                     </li>
                 </ul>
             </div>
-            is to have web-based solutions. Although there are some web instances <span class="example">
+            is to have web-based solutions. Although some language workbenches provide a web-based solution <span class="example">
                 <i class="example-icon">E.g.</i> 
                 <a class="bare-link example-link" href="https://atompm.github.io/">AToMPM</a>, 
-                <a class="bare-link example-link" href="https://webgme.org/">WebGME</a>,
-                <a class="bare-link example-link" href="https://github.com/modelix/modelix">Modelix</a>
+                <a class="bare-link example-link" href="https://webgme.org/">WebGME</a>
             </span> <strong>currently, no web-based modeling tool natively supports projectional editing</strong>.
         </div>
     </section>
@@ -212,7 +223,8 @@ css: ["pages/about.css"]
             We aim to provide better support for DSM and <strong>make modeling more accessible to domain experts and practitioners</strong>.
             Our approach is implemented in <strong>Gentleman, a lightweight web-based projectional editor</strong>.
             With Gentleman, users can create models with structures unrelated to a programming paradigm, called <em>concepts</em>.
-            The <em>projections</em>, which provide a visual to manipulate the model, leverage web technologies <span class="example">
+            The <em>projections</em>, which provide a visual to manipulate the model, leverage web technologies 
+            <span class="example">
                 <i class="example-icon">E.g.</i> 
                 <span class="bare-link example-link">HTML5</span>, 
                 <span class="bare-link example-link">CSS</span>

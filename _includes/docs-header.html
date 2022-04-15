@@ -1,13 +1,10 @@
-<header class="page-header">
-    <a class="link header__link has-helper" href="/">
-        <span class="link-logo">Gentleman</span>
-        <i class="helper">Go to the homepage</i>
+<header class="page-header" style="background-color: #f5f5f5;">
+    <a class="bare-link logo-link" href="/">
+        <img class="logo-link-img" src="/assets/images/logo_gentleman.png" alt="Gentleman logo">
+        <span class="logo-link-text font-gentleman">Gentleman</span>
     </a>
-    <div class="page-menu-item selected">
-        <span class="link-logo">Documentation</span>
-    </div>
     <ul class="bare-list page-menu" data-component="menu">
-        {% for link in site.documentation %}
+        {% for link in site.navigation %}
             {% if link.name == page.id  %}
                 <li class="page-menu-item selected has-helper">
                     <span class="page-menu-item__text">{{ link.title }}</span>

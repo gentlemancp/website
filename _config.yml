@@ -62,6 +62,10 @@ site-css:
 - "/assets/css/docs.css"
 
 navigation:
+- title: Docs
+  name: docs
+  url: /docs
+  help: Guide and Tutorial
 - title: About
   name: about
   url: /about
@@ -70,10 +74,10 @@ navigation:
   name: faq
   url: /faq
   help: Questions and Answers
-- title: Docs
-  name: docs
-  url: /docs
-  help: Guide and Tutorial
+- title: App
+  name: app
+  url: https://geodes.iro.umontreal.ca/gentleman/app/index.html
+  help: Play with Gentleman
 
 documentation:
 - title: Getting started
