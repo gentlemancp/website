@@ -74,10 +74,6 @@ navigation:
   name: faq
   url: /faq
   help: Questions and Answers
-- title: App
-  name: app
-  url: https://geodes.iro.umontreal.ca/gentleman/app/index.html
-  help: Play with Gentleman
 
 documentation:
 - title: Getting started

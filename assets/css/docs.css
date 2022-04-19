@@ -12,7 +12,7 @@ h4 { font-size: 1.5em; font-weight: 600; margin-bottom: 0; }
 }
 
 .page-header {
-    display: flex; 
+    display: flex;  
     background-color: #fff;
 }
 
@@ -123,6 +123,16 @@ h4 { font-size: 1.5em; font-weight: 600; margin-bottom: 0; }
         opacity: 1;   
         transform: scale(1) translateY(2px);
     }
+
+.page-header-link {
+    position: relative;
+    display: flex;
+    height: 100%;
+    color: #6667AB;
+    font-size: 1.4em; font-weight: 300;
+    cursor: default;
+}
+
 
 .page-footer {
     color: #fff;
