@@ -1,0 +1,21 @@
+- name: Louis-Edouard LAFONTANT
+  role: Creator & Developer
+  description: Louis-Edouard is a Computer Science graduate specialized in software engineering. He is an active member of the <a href="https://geodes.iro.umontreal.ca/">GEODES Software Engineering Research Group</a>.
+  email: louis.edouard.lafontant@umontreal.ca
+  url: "http://www-ens.iro.umontreal.ca/~lafontle/"
+  photo: /assets/images/photo_lelafontant.jpeg
+  membership: team
+- name: Eugene SYRIANI
+  role: Supervisor
+  description: Eugene is an Associate Professor in Computer Science at the University of Montreal. He is one of the leaders of the <a href="https://geodes.iro.umontreal.ca/">GEODES Software Engineering Research Group</a>.
+  email: syriani@iro.umontreal.ca
+  url: " http://www-ens.iro.umontreal.ca/~syriani/"
+  photo: /assets/images/eugene_syriani.jpg
+  membership: team
+- name: Aurélien DUCOIN
+  role: Developer
+  description: Aurélien is adding support for graphical (svg-based) projections, as part of his master's degree at the <a href="https://geodes.iro.umontreal.ca/">GEODES Software Engineering Research Group</a>.
+  email: aurelien.ducoin@umontreal.ca
+  url: ""
+  photo: /assets/images/photo_aurelien_ducoin.png
+  membership: contributor

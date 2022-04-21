@@ -13,10 +13,7 @@
     <meta property="og:url" content="https://gentlemancp.org/">
     <meta property="og:site_name" content="Gentleman">
     <meta property="og:image" content="https://gentlemancp.org/assets/images/logo_gentleman_200.png">
-    <link rel="stylesheet" href="/assets/css/normalize.css">
-    <link rel="stylesheet" href="/assets/css/base.css">
-    <link rel="stylesheet" href="/assets/css/site.css">
-    <link rel="stylesheet" href="/assets/css/docs.css">
+    <link rel="stylesheet" href="/assets/bundle/style.min.css">
     {% if page.css %}
         {% for stylesheet in page.css %}
             <link rel="stylesheet" href="/assets/css/{{ stylesheet }}">
@@ -32,6 +29,8 @@
     </main>
 
     {%- include footer.html -%}
+
+    <script src="/assets/js/app.js"></script>
 </body>
 
 </html>

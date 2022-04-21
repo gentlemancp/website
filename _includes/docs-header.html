@@ -1,29 +1,39 @@
-<header class="page-header" style="background-color: #f5f5f5;">
-    <a class="bare-link logo-link" href="/">
-        <img class="logo-link-img" src="/assets/images/logo_gentleman.png" alt="Gentleman logo">
-        <span class="logo-link-text font-gentleman">Gentleman</span>
-    </a>
+<header class="page-header page-header--docs" style="background-color: #f5f5f5;">
+    <div class="page-header-main">
+        <a class="bare-link logo-link" href="/">
+            <img class="logo-link-img" src="/assets/images/logo_gentleman.png" alt="Gentleman logo">
+            <span class="logo-link-text font-gentleman">Gentleman</span>
+        </a>
+    
+        <ul class="bare-list page-menu" data-component="menu">
+            {% for link in site.navigation %}
+                {% if link.name == page.id  %}
+                    <li class="page-menu-item selected has-helper">
+                        <span class="page-menu-item__text">{{ link.title }}</span>
+                        <i class="helper">You are there 👇</i>
+                    </li>
+                {% else %}
+                    <li class="page-menu-item has-helper">
+                        <a class="page-menu-item__link" href="{{ link.url }}">{{ link.title }}</a>
+                        <i class="helper">{{ link.help }}</i>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    
+        <ul class="bare-list page-menu">
+            <li class="page-menu-item has-helper">
+                <a class="page-menu-item__link" href="https://geodes.iro.umontreal.ca/gentleman/app/index.html">App</a>
+                <i class="helper">Play with Gentleman</i>
+            </li>
+        </ul>
+    </div>
 
-    <ul class="bare-list page-menu" data-component="menu">
-        {% for link in site.navigation %}
-            {% if link.name == page.id  %}
-                <li class="page-menu-item selected has-helper">
-                    <span class="page-menu-item__text">{{ link.title }}</span>
-                    <i class="helper">You are there 👇</i>
-                </li>
-            {% else %}
-                <li class="page-menu-item has-helper">
-                    <a class="page-menu-item__link" href="{{ link.url }}">{{ link.title }}</a>
-                    <i class="helper">{{ link.help }}</i>
-                </li>
-            {% endif %}
-        {% endfor %}
-    </ul>
-
-    <ul class="bare-list page-menu">
-        <li class="page-menu-item has-helper">
-            <a class="page-menu-item__link" href="https://geodes.iro.umontreal.ca/gentleman/app/index.html">App</a>
-            <i class="helper">Play with Gentleman</i>
+    <ul class="bare-list socials">
+        <li class="social">
+            <a class="social-link" target="_blank" href="https://github.com/geodes-sms/gentleman">
+                <img class="social-link-img" src="/assets/images/GitHub-Mark-32px.png" alt="">
+            </a>
         </li>
     </ul>
 </header>

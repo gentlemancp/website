@@ -1,0 +1,29 @@
+<section class="team-section">
+    {% assign team = site.data.contributors | where: "membership", "team" %}
+    {% assign contributors = site.data.contributors | where: "membership", "contributor" %}
+
+    <h2 class="section-title">Team and contributors</h2>
+    <div class="card-container">
+        {% for item in team %}
+            <div class="card">
+                <img class="card-img" src="{{item.photo}}" alt="{{ item.name }} photo">
+                <p class="card-name"><a href="{{ item.url }}" target="_blank">{{ item.name }}</a></p>
+                <p class="card-role">{{ item.role }}</p>
+                <p class="card-description">{{ item.description }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+    <h3 class="title">Contributors</h3>
+    <div class="card-container card-container--small">
+        {% for item in contributors %}
+            <div class="card">
+                <img class="card-img card-img--small" src="{{ item.photo }}" alt="{{ item.name }} photo">
+                <p class="card-name">{{ item.name }}</p>
+                <p class="card-role">{{ item.role }}</p>
+                <p class="card-description">{{ item.description }}</p>
+            </div>
+        {% endfor %}
+    </div>
+    <!-- <p><a href="mailto:louis.edouard.lafontant@umontreal.ca">Become a contributor</a>.</p> -->
+</section>

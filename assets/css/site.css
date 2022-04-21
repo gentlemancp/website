@@ -93,7 +93,7 @@
     .site:after {
         content: "";
         position: absolute;
-        top: -45px; right: 24%; bottom: 10%;
+        top: -45px; right: 24%; bottom: 1%;
         width: 20%;
         transform: rotate(30deg) skewX(5deg);
         border-top-right-radius: 5px;
